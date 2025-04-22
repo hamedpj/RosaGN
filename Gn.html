@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para Génesis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8e6e8;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 100%;
+            padding: 20px;
+        }
+        
+        .envelope {
+            background-color: #e74c3c;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        
+        .envelope-text {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .letter {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: none;
+            text-align: left;
+            line-height: 1.6;
+        }
+        
+        .letter h2 {
+            color: #e74c3c;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .heart {
+            color: #e74c3c;
+            font-size: 24px;
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        .signature {
+            font-style: italic;
+            text-align: right;
+            margin-top: 30px;
+        }
+        
+        .visible {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="envelope" id="envelope">
+            <p class="envelope-text">Toca aquí para abrir tu carta ❤️</p>
+        </div>
+        
+        <div class="letter" id="letter">
+            <h2>Mi querida Génesis</h2>
+            
+            <p>En este momento quiero expresarte lo mucho que significas para mí y lo afortunado/a que me siento de tenerte en mi vida.</p>
+            
+            <div class="heart">❤️</div>
+            
+            <p>Tu sonrisa ilumina mis días y tu voz calma mis preocupaciones. Contigo he descubierto que el amor verdadero no solo existe en las películas, sino que puede ser real y más hermoso de lo que jamás imaginé.</p>
+            
+            <div class="heart">❤️</div>
+            
+            <p>Gracias por estar a mi lado en los buenos y malos momentos, por tu paciencia, tu comprensión y tu amor incondicional.</p>
+            
+            <p>Prometo cuidar nuestro amor cada día, valorar lo que tenemos y construir juntos un futuro lleno de sueños y felicidad.</p>
+            
+            <div class="heart">❤️</div>
+            
+            <p>Te quiero mucho mi vida.</p>
+            
+            <div class="signature">
+                Con todo mi amor,<br>
+                Tu enamorado/a
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('envelope').addEventListener('click', function() {
+            document.getElementById('letter').classList.add('visible');
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
